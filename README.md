@@ -1,8 +1,9 @@
 # Alma DV Time In Work Order Status
 This is a repository with the Oracle DV code used to create an Alma Data Visualization showing the amount of time items in Alma spend in a specific work order status over time.
 ## Structure
-Each folder represents a DV file (workbook, data flow, etc), and each file within that includes the code for a specific step.
+Each folder represents a DV file (workbook, data flow), and each file within that includes the code for a specific step.
 Alma DV automatically translates fields to a hyperlinked text string that appears simply as "Item Location Code" but includes a full XSA path hidden behind the link (eg "XSA('HE_12345678920004107_4107_D_na04.alma.exlibrisgroup.com'.'__CLIENT_FLOW_DATASET__')."Columns"."Item Location Code""). I recommend typing in each field as needed and selecting it from the results that pop up in the editor.
+
 ![Screenshot showing what it looks like to select a field from the popup when you start typing in DV](/images/selecting-dv-fields.png)
 ## Process
 ### Create a Join Dataset to combine two Analytics subject areas
@@ -86,4 +87,5 @@ To view just the stats from the past year, add a filter to the visualization for
 Drag a field you want to filter by into the canvas. Choose the visualization type "Dashboard filters" or "List."
 If using "List," click the "Use as Filter" option to the left of the visualization title.
 ## Questions
+
 For questions or more information, email <bright@gwu.edu>
