@@ -1,0 +1,8 @@
+CASE
+  When Days in Cataloging Maximum IS NULL THEN 'In process'
+  WHEN Days in Cataloging Maximum <= 2 THEN '01-02 days'
+  WHEN Days in Cataloging Maximum BETWEEN 3 AND 7 THEN '03-07 days'
+  WHEN Days in Cataloging Maximum BETWEEN 8 AND 30 THEN '08-30 days'
+  WHEN Days in Cataloging Maximum BETWEEN 31 AND 90 THEN '31-90 days'
+  WHEN Days in Cataloging Maximum >= 90 THEN '91+ days'
+END

@@ -1,0 +1,8 @@
+TIMESTAMPDIFF(
+  SQL_TSI_DAY,
+  Event Start Date,
+  COALESCE(
+    Event End Date,
+    Request Completion Date
+    )
+  ) + 1

@@ -1,0 +1,11 @@
+CASE
+WHEN LOWER(Item Location Code) LIKE '%grc%' then 'Global Resource Center'
+WHEN (
+  UPPER(Item Location Code) LIKE '%SCRC%' OR
+  UPPER(Item Location Code) LIKE '%KIEV%' OR
+  UPPER(Item Location Code) LIKE '%WRLC STRU%' OR
+  Item Library Code = 'SCRC'
+)
+  THEN 'Special Collections'
+ELSE 'General'
+END
