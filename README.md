@@ -24,6 +24,7 @@ Select at least the following fields:
 - Event End Date>Event End Date
 - Item Work Order Department Status Change>Work Order Status
 - Physical Item Details (Current)>Physical Item Id
+
 You might also need the following fields if you have multiple work order departments or types with the same status:
 - Work Order Type
 - Work Order Department
@@ -89,3 +90,4 @@ If using "List," click the "Use as Filter" option to the left of the visualizati
 ## Questions
 
 For questions or more information, email <bright@gwu.edu>
+
